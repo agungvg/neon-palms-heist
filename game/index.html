@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Palms — The Marlin Vault</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070b11; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { width: min(100vw, calc(100vh * 1280 / 720)); height: auto; aspect-ratio: 1280 / 720; display: block; background: #0d1622; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="status" aria-live="polite">Neon Palms. Press Space or click to start.</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
